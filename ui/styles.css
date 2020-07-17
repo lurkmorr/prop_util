@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    -webkit-user-select: none;
+    font-size: 15px;
+}
+
+button:active, button:focus {
+    outline: none;
+}
+button::-moz-focus-inner {
+    border: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0
+}
+
+
+#wrapper{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 350px;
+    background-color: rgba(43, 145, 213, 0.7);
+    border-radius: 2px;
+}
+
+#header-wrapper p {
+    text-align: center;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+#header-wrapper .buttons {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#header-wrapper textarea {
+    width: 100%;
+    border: none;
+    resize: none;
+    margin-bottom: 10px;
+}
+
+#main-wrapper
+{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    height: 510px;
+}
+
+#footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#footer-wrapper .buttons{
+    background-color: transparent;
+    display: inline-block;
+    padding: 0;
+}
+
+#footer-wrapper .buttons button{
+    margin-top: 6px;
+    border: none;
+    background-color: transparent;
+}
+
+#footer-wrapper input[type='text'] {
+    width: 130px;
+}
+
+#edit-object {
+    width: 49%;
+
+}
+
+#choose-object {
+    width: 49%;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+#choose-object div {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#edit-object div div {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 10px 0;
+    border: none;
+}
+
+select {
+    border: none;
+}
+
+#edit-object div {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px 0 5px 0;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+input[type='text'] {
+    border: none;
+}
+
+
+:active{
+    border: none;
+    outline: 0;
+    outline-offset: 0;
+}
+
+:focus{
+    border: none;
+    outline: 0;
+    outline-offset: 0;
+}
+
+#ped-bone select{
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.selected {
+    background-color: rgba(165, 92, 92, 0.72);
+}

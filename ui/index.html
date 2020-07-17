@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body style="display: none">
+    <div id="wrapper">
+        <div id="header-wrapper">
+            <p>Ped Decorator</p>
+            <div class="buttons">
+                <button onclick="addProp()">Add Prop</button>
+                <button onclick="propData()">Prop Data</button>
+                <button onclick="deleteProp()">Delete Prop</button>
+            </div>
+            <textarea name="propData" id="propData" cols="30" rows="3"></textarea>
+        </div>
+        <div id="main-wrapper">
+            <div id="choose-object">
+                <p>Prop List</p>
+            </div>
+            <div id="edit-object">
+                <div id="prop-name">
+                    <p>Prop Name</p>
+                    <div><input type="text"></div>
+                </div>
+                <div id="ped-bone">
+                    <p>Ped Bone</p>
+                    <select>
+                        <option data-boneid = 31086>Head</option>
+                        <option data-boneid = 28422>Right Wrist</option>
+                        <option data-boneid = 60309>Left Wrist</option>
+                        <option data-boneid = 57005>Right Hand</option>
+                        <option data-boneid = 24818>Chest</option>
+                        <option data-boneid = 39317>Month</option>
+                        <option data-boneid = 63931>Left Knee</option>
+                        <option data-boneid = 36864>Right Knee</option>
+                        <option data-boneid = 14201>Left Shoe</option>
+                        <option data-boneid = 52301>Right Shoe</option>
+                        <option data-boneid = 51826>Vagaina</option>
+                        <option data-boneid = 11816>Umbilical</option>
+                        <option data-boneid = 40269>Right Shoulder</option>
+                        <option data-boneid = 28252>Right Arm</option>
+                        <option data-boneid = 45509>Left Shoulder</option>
+                        <option data-boneid = 61163>Left Arm</option>
+                    </select>
+                </div>
+                <div id="pos-x">
+                    <p>Position X</p>
+                    <div>
+                        <input type="range" value="0" step="0.001" min="-2" max="2">
+                        <p class="val">0</p>
+                    </div>
+                </div>
+                <div id="pos-y">
+                    <p>Position Y</p>
+                    <div>
+                        <input type="range" value="0" step="0.001" min="-2" max="2">
+                        <p class="val">0</p>
+                    </div>
+                </div>
+                <div id="pos-z">
+                    <p>Position Z</p>
+                    <div>
+                        <input type="range" value="0" step="0.001" min="-2" max="2">
+                        <p class="val">0</p>
+                    </div>
+                </div>
+                <div id="rot-x">
+                    <p>Rotation X</p>
+                    <div>
+                        <input type="range" value="0" step="0.1" min="0" max="360">
+                        <p class="val">0</p>
+                    </div>
+                </div>
+                <div id="rot-y">
+                    <p>Rotation Y</p>
+                    <div>
+                        <input type="range" value="0" step="0.1" min="0" max="360">
+                        <p class="val">0</p>
+                    </div>
+                </div>
+                <div id="rot-z">
+                    <p>Rotation Z</p>
+                    <div>
+                        <input type="range" value="0" step="0.1" min="0" max="360">
+                        <p class="val">0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer-wrapper">
+            <div id="animDict">
+                <p>Anim dict</p>
+                <input type="text">
+            </div>
+            <div id="animName">
+                <p>Anim name</p>
+                <input type="text">
+            </div>
+            <div class="buttons">
+                <button id = 'start-anim'><img src="assets/play.svg" alt="" height="30px" onclick="startAnim()"></button>
+                <button id="stop-anim"><img src="assets/stop.svg" alt="" height="30px" onclick="stopAnim()"></button>
+            </div>
+        </div>
+    </div>
+
+<script src="app.js" type="text/javascript"></script>
+</body>
+</html>
